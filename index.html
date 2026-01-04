@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PennyBloom 🌱</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="app">
+  <h1>🌱 PennyBloom</h1>
+  <p class="subtitle">Saving made cute & easy</p>
+
+  <div class="card">
+    <h2 id="goal-name">My Savings Goal</h2>
+    <div class="jar">
+      <div id="fill"></div>
+    </div>
+    <p id="progress-text">R0 / R0 saved</p>
+  </div>
+
+  <div class="card">
+    <input type="text" id="goalInput" placeholder="Goal name">
+    <input type="number" id="amountInput" placeholder="Goal amount (R)">
+    <button onclick="setGoal()">🎯 Set Goal</button>
+  </div>
+
+  <div class="card">
+    <input type="number" id="saveInput" placeholder="Amount saved (R)">
+    <button onclick="addSavings()">➕ Add Savings</button>
+  </div>
+
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
